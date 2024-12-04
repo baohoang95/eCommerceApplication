@@ -156,7 +156,7 @@ public class UserControllerTest {
     }
 
     /**
-     * Test failure when creating a user with a password that is too short.
+     * Test failure when creating a user with a password that is too short .
      */
     @Test
     public void create_user_fail_password_length() {
