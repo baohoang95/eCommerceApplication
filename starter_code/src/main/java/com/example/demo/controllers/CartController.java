@@ -85,7 +85,7 @@ public class CartController {
 				.forEach(i -> cart.removeItem(item.get()));
 		cartRepository.save(cart);
 
-		log.info("Item successfully removed from cart for user: {}. Item ID: {}, Quantity: {}",
+		log.info("Item success removed from cart for user: {}. Item ID: {}, Quantity: {}",
 				request.getUsername(), request.getItemId(), request.getQuantity());
 
 		return ResponseEntity.ok(cart);
